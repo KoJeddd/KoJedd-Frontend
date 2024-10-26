@@ -9,6 +9,7 @@
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "db": "json-server --watch  ./src/data/dummyData/data.json --port 3000",
     "associates": "json-server --watch  ./src/data/dummyData/associatesData.json --port 3001",
+    "chatsServer": "json-server --watch ./src/data/dummyData/chats.json --port 8000",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -19,12 +20,13 @@
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@hookform/resolvers": "^3.9.0",
     "@radix-ui/react-checkbox": "^1.1.1",
+    "@radix-ui/react-dialog": "^1.1.1",
     "@radix-ui/react-label": "^2.1.0",
     "@radix-ui/react-select": "^2.1.1",
     "@radix-ui/react-slot": "^1.1.0",
     "@reduxjs/toolkit": "^1.9.5",
     "apexcharts": "^3.52.0",
-    "axios": "^1.6.8",
+    "axios": "^1.7.5",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "emoji-picker-react": "^4.11.1",

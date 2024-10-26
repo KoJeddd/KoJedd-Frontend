@@ -1,5 +1,5 @@
 import React, { createContext, useState, useEffect, useMemo } from "react";
-import teamData from "../../public/teams.json";
+import teamData from "/src/teams.json";
 
 // Create the context
 export const TeamsContext = createContext();

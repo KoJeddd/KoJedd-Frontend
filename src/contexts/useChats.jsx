@@ -1,66 +1,89 @@
-import { createContext, useContext, useState } from "react";
+import {
+  postMessage,
+  getChatMessages,
+  createChat,
+  getChatSummary,
+  getAllUserChatsSummary,
+} from "@/lib/actions/chats";
 
-const initialChats = [
-  {
-    category: "collab",
-    name: "Web3 Product Application",
-    chatId: "chat1",
-    members: ["user1", "user2", "user3"],
-  },
-  {
-    category: "collab",
-    name: "Crypto Application",
-    chatId: "chat2",
-    members: ["user1", "user2", "user4"],
-  },
-  {
-    category: "collab",
-    name: "Mining for the rainy day",
-    chatId: "chat3",
-    members: ["user2", "user3", "user4"],
-  },
-  {
-    category: "private",
-    name: "Freeman",
-    chatId: "chat01",
-  },
-  {
-    category: "private",
-    name: "Michael",
-    chatId: "chat02",
-  },
-  {
-    category: "private",
-    name: "Wale senior designer",
-    chatId: "chat03",
-  },
-  {
-    category: "team",
-    teamChatId: "team1",
-    name: "Decollaborators",
-    groups: [
-      { name: "Developers", chatId: "chat3", members: [] },
-      { name: "Developers", chatId: "chat3", members: [] },
-    ],
-  },
-];
+import { createContext, useContext, useEffect, useMemo, useState } from "react";
+import { useNavigate, useParams } from "react-router-dom";
 
-// export function chatCategoryIcon({size = ''}) {
-//   const [selectedChatsCategory, setSelectedChatsCategory] = useState("collab");
-
-//   switch (selectedCategory) {
-//     case value:
-
-//       break;
-
-//     default:
-//       break;
-//   }
-// }
 const ChatsContext = createContext();
-const ChatsProvider = ({ children }) => {
-  const [selectedChatsCategory, setSelectedChatsCategory] = useState("collab");
+export const currentUserId = "user_002";
 
+const ChatsProvider = ({ children }) => {
+  const { chatsCategory, chatId } = useParams();
+  const [selectedChatsCategory, setSelectedChatsCategory] = useState(
+    chatsCategory || "collab",
+  );
+  const [chats, setChats] = useState([]);
+  const [isChatsLoading, setIsChatsLoading] = useState(true);
+
+  const navigate = useNavigate();
+
+  const [messages, setMessages] = useState([]);
+
+  const chatsSorted = useMemo(
+    () =>
+      chats.sort(
+        (a, b) =>
+          new Date(b.lastMessage?.sentAt) - new Date(a.lastMessage?.sentAt),
+      ),
+    [chats],
+  );
+
+  // Initialize fetching of chats summary for current chat type
+  useEffect(() => {
+    async function fetchUserChats() {
+      try {
+        setIsChatsLoading(true);
+
+        const chatsSummaryList = await getAllUserChatsSummary(
+          selectedChatsCategory,
+          currentUserId,
+        );
+        setChats(chatsSummaryList);
+      } catch (error) {
+        console.error(error);
+      } finally {
+        setIsChatsLoading(false);
+      }
+    }
+
+    fetchUserChats();
+  }, [selectedChatsCategory]);
+
+  // Fetch messages when chat id changes
+  useEffect(() => {
+    async function fetchMessages() {
+      try {
+        const messages = await getChatMessages(chatId);
+        // console.log(messages);
+        setMessages(
+          messages.map((el) => {
+            return {
+              ...el.message,
+              ...el,
+            };
+          }),
+        );
+      } catch (error) {
+        console.error(error);
+      }
+    }
+
+    fetchMessages();
+  }, [chatId]);
+
+  // Navigate to first chat when current user changes, or navigate to homepage if first chat DNE
+  // useEffect(() => {
+  //   const firstChatId = chats[0]?.id;
+
+  //   firstChatId && navigate(`/chats/${selectedChatsCategory}/${firstChatId}`);
+
+  //   !firstChatId && navigate("/chats");
+  // }, [chats, navigate, selectedChatsCategory]);
   const chatsCategories = [
     {
       name: "collab",
@@ -150,10 +173,87 @@ const ChatsProvider = ({ children }) => {
       ),
     },
   ];
-  const [chats, setChats] = useState([]);
 
   function handleSelectChatsCategory(id) {
     setSelectedChatsCategory(id);
+  }
+  async function handleAddChat(chatId, chatType, currentUserId) {
+    try {
+      const newChat = await getChatSummary(
+        chatId,
+        chatsCategory,
+        currentUserId,
+      );
+
+      setChats((chats) => [...chats, newChat]);
+      setChats((chats) =>
+        chats.sort(
+          (a, b) =>
+            new Date(b.lastMessage?.sentAt) - new Date(a.lastMessage?.sentAt),
+        ),
+      );
+
+      const recipientId = chatId.split("__")[1];
+      const participants = [currentUserId, recipientId];
+
+      await createChat(chatId, chatType, participants);
+    } catch (error) {
+      console.error(error);
+    }
+  }
+  function handleUpdateLastMessage(chatId, message) {
+    console.log(chatId, message);
+    console.log(chats);
+    setChats((chats) =>
+      chats.map((chat) => {
+        if (chat.id === chatId)
+          return {
+            ...chat,
+            lastMessage: message,
+          };
+        else return chat;
+      }),
+    );
+  }
+  function handleAddMessage(message) {
+    // Update messages locally
+    setMessages((messages) => [...messages, message]);
+    handleUpdateLastMessage(chatId, message);
+    // Post new message to server
+    handlePostMessage(message);
+
+    // Check if chat already exists
+    const existingChat = chats.find((chat) => chat.id === message.chatId);
+
+    // Create a new chat if chat exists
+    if (existingChat) return;
+
+    // Add chat if chat doesn't exist (locally and remotely)
+    handleAddChat(message.chatId, chatsCategory, currentUserId);
+  }
+  async function handlePostMessage(message) {
+    try {
+      const { isPending, ...messageObject } = message;
+
+      await postMessage(messageObject);
+
+      // console.log(res);
+
+      // if (res.statusText !== "Created") return;
+
+      setMessages((messages) =>
+        messages.map((msg) => {
+          if (msg.id === message.id)
+            return {
+              ...msg,
+              message: { ...msg.message, isPending: false },
+            };
+          else return msg;
+        }),
+      );
+    } catch (error) {
+      console.error(error);
+    }
   }
 
   return (
@@ -163,6 +263,15 @@ const ChatsProvider = ({ children }) => {
         setSelectedChatsCategory,
         onSelectChatsCategory: handleSelectChatsCategory,
         chatsCategories,
+        currentUserId,
+        isChatsLoading,
+        setIsChatsLoading,
+        chats: chatsSorted,
+        setChats,
+        onUpdateLastMessage: handleUpdateLastMessage,
+        onAddChat: handleAddChat,
+        onAddMessage: handleAddMessage,
+        messages,
       }}
     >
       {children}
@@ -174,7 +283,7 @@ const useChats = () => {
   const context = useContext(ChatsContext);
 
   if (context === undefined)
-    return console.log("Chats context used outside its provider");
+    throw new Error("You tried to use chats context outside its provider");
 
   return context;
 };
