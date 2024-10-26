@@ -1,4 +1,9 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
+import { Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
+
+// import Navbar from "./components/Navbar.jsx";
 import Homepage from "./pages/Homepage/Homepage.jsx";
 import Search from "./pages/Search/Search.jsx";
 import SignInPage from "./pages/Authentication_Pages/SignInPage.jsx";
@@ -159,7 +164,32 @@ const router = createBrowserRouter([
       },
       {
         path: ":chatsCategory/:groupId/:chatId",
+      },
+    ],
+  },
+  {
+    element: <Chats />,
+    children: [
+      {
+        path: "/chats",
+        element: <MessageAreaPlaceholder />,
+      },
+      {
+        path: "/chats/:chatsCategory/:chatId",
         element: <MessageArea />,
+      },
+      {
+        path: "/chats/:chatsCategory/:teamId/:chatId",
+        element: <MessageArea />,
+      },
+    ],
+  },
+  {
+    element: <DashboardLayout />,
+    children: [
+      {
+        path: "/chats/:chatsCategory/:chatId/collab-proposal",
+        element: <CollaborationProposal />,
       },
     ],
   },

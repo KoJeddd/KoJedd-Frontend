@@ -1,0 +1,1324 @@
+{
+  "chats": [
+    {
+      "chatId": "chat_001",
+      "chatName": "Product Design Revamp",
+      "chatType": "collab",
+      "participants": ["user_001", "user_002", "group_001"],
+      "lastMessageId": "msg_001",
+      "createdAt": "2024-08-26T15:34:00Z",
+      "updatedAt": "2024-08-26T16:00:00Z"
+    },
+    {
+      "chatId": "chat_002",
+      "chatName": "Marketing Campaign 2024",
+      "chatType": "collab",
+      "participants": ["user_003", "user_004", "group_002"],
+      "lastMessageId": "msg_002",
+      "createdAt": "2024-08-26T16:00:00Z",
+      "updatedAt": "2024-08-26T16:30:00Z"
+    },
+    {
+      "chatId": "chat_003",
+      "chatName": "Tech Innovations",
+      "chatType": "collab",
+      "participants": ["user_005", "group_003"],
+      "lastMessageId": "msg_003",
+      "createdAt": "2024-08-26T16:45:00Z",
+      "updatedAt": "2024-08-26T17:00:00Z"
+    },
+    {
+      "chatId": "chat_004",
+      "chatName": "Annual Budget Review",
+      "chatType": "collab",
+      "participants": ["user_006", "user_007", "group_004"],
+      "lastMessageId": "msg_004",
+      "createdAt": "2024-08-26T17:10:00Z",
+      "updatedAt": "2024-08-26T17:30:00Z"
+    },
+    {
+      "chatId": "chat_005",
+      "chatName": "Design Team Sync",
+      "chatType": "team",
+      "groups": ["group_001", "group_003", "group_007"],
+      "lastMessageId": "msg_005",
+      "createdAt": "2024-08-25T14:20:00Z",
+      "updatedAt": "2024-08-25T18:00:00Z"
+    },
+    {
+      "chatId": "chat_006",
+      "chatName": "Product Strategy",
+      "chatType": "team",
+      "groups": ["group_002", "group_004", "group_008", "group_009"],
+      "lastMessageId": "msg_006",
+      "createdAt": "2024-08-25T18:30:00Z",
+      "updatedAt": "2024-08-25T19:00:00Z"
+    },
+    {
+      "chatId": "chat_007",
+      "chatName": "Customer Support",
+      "chatType": "team",
+      "groups": ["group_003", "group_005", "group_010"],
+      "lastMessageId": "msg_007",
+      "createdAt": "2024-08-24T13:00:00Z",
+      "updatedAt": "2024-08-24T14:00:00Z"
+    },
+    {
+      "chatId": "chat_008",
+      "chatName": "Tech Innovations Discussion",
+      "chatType": "team",
+      "groups": ["group_004", "group_006", "group_011"],
+      "lastMessageId": "msg_008",
+      "createdAt": "2024-08-24T14:30:00Z",
+      "updatedAt": "2024-08-24T15:00:00Z"
+    },
+    {
+      "chatId": "chat_009",
+      "chatName": null,
+      "chatType": "private",
+      "participants": ["user_008", "user_009"],
+      "lastMessageId": "msg_009",
+      "createdAt": "2024-08-23T10:15:00Z",
+      "updatedAt": "2024-08-23T11:00:00Z"
+    },
+    {
+      "chatId": "chat_010",
+      "chatName": null,
+      "chatType": "private",
+      "participants": ["user_010", "user_011"],
+      "lastMessageId": "msg_010",
+      "createdAt": "2024-08-22T09:00:00Z",
+      "updatedAt": "2024-08-22T10:00:00Z"
+    },
+    {
+      "chatId": "chat_011",
+      "chatName": null,
+      "chatType": "private",
+      "participants": ["user_012", "user_013"],
+      "lastMessageId": "msg_011",
+      "createdAt": "2024-08-21T11:00:00Z",
+      "updatedAt": "2024-08-21T12:00:00Z"
+    },
+    {
+      "chatId": "chat_012",
+      "chatName": null,
+      "chatType": "private",
+      "participants": ["user_014", "user_015"],
+      "lastMessageId": "msg_012",
+      "createdAt": "2024-08-20T13:00:00Z",
+      "updatedAt": "2024-08-20T14:00:00Z"
+    },
+    {
+      "chatId": "chat_013",
+      "chatName": "User Onboarding",
+      "chatType": "collab",
+      "participants": ["user_016", "group_007"],
+      "lastMessageId": "msg_013",
+      "createdAt": "2024-08-19T15:00:00Z",
+      "updatedAt": "2024-08-19T16:00:00Z"
+    },
+    {
+      "chatId": "chat_014",
+      "chatName": "Feature Requests",
+      "chatType": "collab",
+      "participants": ["user_017", "group_008"],
+      "lastMessageId": "msg_014",
+      "createdAt": "2024-08-18T16:00:00Z",
+      "updatedAt": "2024-08-18T17:00:00Z"
+    },
+    {
+      "chatId": "chat_015",
+      "chatName": "Annual Goals",
+      "chatType": "collab",
+      "participants": ["user_018", "group_009"],
+      "lastMessageId": "msg_015",
+      "createdAt": "2024-08-17T17:00:00Z",
+      "updatedAt": "2024-08-17T18:00:00Z"
+    }
+  ],
+  "groups": [
+    {
+      "groupId": "group_001",
+      "groupName": "Design Team",
+      "members": ["user_001", "user_002", "user_003"],
+      "createdAt": "2024-08-15T09:00:00Z",
+      "updatedAt": "2024-08-25T10:00:00Z"
+    },
+    {
+      "groupId": "group_002",
+      "groupName": "Marketing Team",
+      "members": ["user_004", "user_005"],
+      "createdAt": "2024-08-16T10:00:00Z",
+      "updatedAt": "2024-08-26T11:00:00Z"
+    },
+    {
+      "groupId": "group_003",
+      "groupName": "Development Team",
+      "members": ["user_006", "user_007"],
+      "createdAt": "2024-08-17T11:00:00Z",
+      "updatedAt": "2024-08-27T12:00:00Z"
+    },
+    {
+      "groupId": "group_004",
+      "groupName": "Sales Team",
+      "members": ["user_008", "user_009"],
+      "createdAt": "2024-08-18T12:00:00Z",
+      "updatedAt": "2024-08-28T13:00:00Z"
+    },
+    {
+      "groupId": "group_005",
+      "groupName": "HR Team",
+      "members": ["user_010", "user_011"],
+      "createdAt": "2024-08-19T13:00:00Z",
+      "updatedAt": "2024-08-29T14:00:00Z"
+    },
+    {
+      "groupId": "group_006",
+      "groupName": "Product Team",
+      "members": ["user_012", "user_013"],
+      "createdAt": "2024-08-20T14:00:00Z",
+      "updatedAt": "2024-08-30T15:00:00Z"
+    },
+    {
+      "groupId": "group_007",
+      "groupName": "Customer Support",
+      "members": ["user_014", "user_015"],
+      "createdAt": "2024-08-21T15:00:00Z",
+      "updatedAt": "2024-08-31T16:00:00Z"
+    },
+    {
+      "groupId": "group_008",
+      "groupName": "Operations Team",
+      "members": ["user_016", "user_017"],
+      "createdAt": "2024-08-22T16:00:00Z",
+      "updatedAt": "2024-09-01T17:00:00Z"
+    },
+    {
+      "groupId": "group_009",
+      "groupName": "Finance Team",
+      "members": ["user_018", "user_019"],
+      "createdAt": "2024-08-23T17:00:00Z",
+      "updatedAt": "2024-09-02T18:00:00Z"
+    },
+    {
+      "groupId": "group_010",
+      "groupName": "Legal Team",
+      "members": ["user_020", "user_021"],
+      "createdAt": "2024-08-24T18:00:00Z",
+      "updatedAt": "2024-09-03T19:00:00Z"
+    },
+    {
+      "groupId": "group_011",
+      "groupName": "Strategy Team",
+      "members": ["user_022", "user_023"],
+      "createdAt": "2024-08-25T19:00:00Z",
+      "updatedAt": "2024-09-04T20:00:00Z"
+    },
+    {
+      "groupId": "group_012",
+      "groupName": "R&D Team",
+      "members": ["user_024", "user_025"],
+      "createdAt": "2024-08-26T20:00:00Z",
+      "updatedAt": "2024-09-05T21:00:00Z"
+    },
+    {
+      "groupId": "group_013",
+      "groupName": "Innovation Team",
+      "members": ["user_026", "user_027"],
+      "createdAt": "2024-08-27T21:00:00Z",
+      "updatedAt": "2024-09-06T22:00:00Z"
+    },
+    {
+      "groupId": "group_014",
+      "groupName": "Growth Team",
+      "members": ["user_028", "user_029"],
+      "createdAt": "2024-08-28T22:00:00Z",
+      "updatedAt": "2024-09-07T23:00:00Z"
+    },
+    {
+      "groupId": "group_015",
+      "groupName": "Corporate Strategy",
+      "members": ["user_030", "user_031"],
+      "createdAt": "2024-08-29T23:00:00Z",
+      "updatedAt": "2024-09-08T00:00:00Z"
+    }
+  ],
+  "users": [
+    {
+      "userId": "user_001",
+      "name": "Alice Johnson",
+      "email": "alice@example.com",
+      "profilePic": "url_to_alice_pic",
+      "joinedAt": "2024-01-15T08:00:00Z"
+    },
+    {
+      "userId": "user_002",
+      "name": "Bob Smith",
+      "email": "bob@example.com",
+      "profilePic": "url_to_bob_pic",
+      "joinedAt": "2024-01-16T08:00:00Z"
+    },
+    {
+      "userId": "user_003",
+      "name": "Carol Williams",
+      "email": "carol@example.com",
+      "profilePic": "url_to_carol_pic",
+      "joinedAt": "2024-01-17T08:00:00Z"
+    },
+    {
+      "userId": "user_004",
+      "name": "David Brown",
+      "email": "david@example.com",
+      "profilePic": "url_to_david_pic",
+      "joinedAt": "2024-01-18T08:00:00Z"
+    },
+    {
+      "userId": "user_005",
+      "name": "Eve Davis",
+      "email": "eve@example.com",
+      "profilePic": "url_to_eve_pic",
+      "joinedAt": "2024-01-19T08:00:00Z"
+    },
+    {
+      "userId": "user_006",
+      "name": "Frank Miller",
+      "email": "frank@example.com",
+      "profilePic": "url_to_frank_pic",
+      "joinedAt": "2024-01-20T08:00:00Z"
+    },
+    {
+      "userId": "user_007",
+      "name": "Grace Wilson",
+      "email": "grace@example.com",
+      "profilePic": "url_to_grace_pic",
+      "joinedAt": "2024-01-21T08:00:00Z"
+    },
+    {
+      "userId": "user_008",
+      "name": "Hannah Moore",
+      "email": "hannah@example.com",
+      "profilePic": "url_to_hannah_pic",
+      "joinedAt": "2024-01-22T08:00:00Z"
+    },
+    {
+      "userId": "user_009",
+      "name": "Ian Taylor",
+      "email": "ian@example.com",
+      "profilePic": "url_to_ian_pic",
+      "joinedAt": "2024-01-23T08:00:00Z"
+    },
+    {
+      "userId": "user_010",
+      "name": "Jane Anderson",
+      "email": "jane@example.com",
+      "profilePic": "url_to_jane_pic",
+      "joinedAt": "2024-01-24T08:00:00Z"
+    },
+    {
+      "userId": "user_011",
+      "name": "Kevin Thomas",
+      "email": "kevin@example.com",
+      "profilePic": "url_to_kevin_pic",
+      "joinedAt": "2024-01-25T08:00:00Z"
+    },
+    {
+      "userId": "user_012",
+      "name": "Lily Jackson",
+      "email": "lily@example.com",
+      "profilePic": "url_to_lily_pic",
+      "joinedAt": "2024-01-26T08:00:00Z"
+    },
+    {
+      "userId": "user_013",
+      "name": "Mason White",
+      "email": "mason@example.com",
+      "profilePic": "url_to_mason_pic",
+      "joinedAt": "2024-01-27T08:00:00Z"
+    },
+    {
+      "userId": "user_014",
+      "name": "Nina Harris",
+      "email": "nina@example.com",
+      "profilePic": "url_to_nina_pic",
+      "joinedAt": "2024-01-28T08:00:00Z"
+    },
+    {
+      "userId": "user_015",
+      "name": "Oliver Martin",
+      "email": "oliver@example.com",
+      "profilePic": "url_to_oliver_pic",
+      "joinedAt": "2024-01-29T08:00:00Z"
+    },
+    {
+      "userId": "user_016",
+      "name": "Parker Thompson",
+      "email": "parker@example.com",
+      "profilePic": "url_to_parker_pic",
+      "joinedAt": "2024-01-30T08:00:00Z"
+    },
+    {
+      "userId": "user_017",
+      "name": "Quinn Martinez",
+      "email": "quinn@example.com",
+      "profilePic": "url_to_quinn_pic",
+      "joinedAt": "2024-01-31T08:00:00Z"
+    },
+    {
+      "userId": "user_018",
+      "name": "Riley Clark",
+      "email": "riley@example.com",
+      "profilePic": "url_to_riley_pic",
+      "joinedAt": "2024-02-01T08:00:00Z"
+    },
+    {
+      "userId": "user_019",
+      "name": "Sophie Lewis",
+      "email": "sophie@example.com",
+      "profilePic": "url_to_sophie_pic",
+      "joinedAt": "2024-02-02T08:00:00Z"
+    },
+    {
+      "userId": "user_020",
+      "name": "Tyler Robinson",
+      "email": "tyler@example.com",
+      "profilePic": "url_to_tyler_pic",
+      "joinedAt": "2024-02-03T08:00:00Z"
+    },
+    {
+      "userId": "user_021",
+      "name": "Uma Walker",
+      "email": "uma@example.com",
+      "profilePic": "url_to_uma_pic",
+      "joinedAt": "2024-02-04T08:00:00Z"
+    },
+    {
+      "userId": "user_022",
+      "name": "Victor Hall",
+      "email": "victor@example.com",
+      "profilePic": "url_to_victor_pic",
+      "joinedAt": "2024-02-05T08:00:00Z"
+    },
+    {
+      "userId": "user_023",
+      "name": "Wendy Young",
+      "email": "wendy@example.com",
+      "profilePic": "url_to_wendy_pic",
+      "joinedAt": "2024-02-06T08:00:00Z"
+    },
+    {
+      "userId": "user_024",
+      "name": "Xander Allen",
+      "email": "xander@example.com",
+      "profilePic": "url_to_xander_pic",
+      "joinedAt": "2024-02-07T08:00:00Z"
+    },
+    {
+      "userId": "user_025",
+      "name": "Yara King",
+      "email": "yara@example.com",
+      "profilePic": "url_to_yara_pic",
+      "joinedAt": "2024-02-08T08:00:00Z"
+    },
+    {
+      "userId": "user_026",
+      "name": "Zane Wright",
+      "email": "zane@example.com",
+      "profilePic": "url_to_zane_pic",
+      "joinedAt": "2024-02-09T08:00:00Z"
+    },
+    {
+      "userId": "user_027",
+      "name": "Ava Scott",
+      "email": "ava@example.com",
+      "profilePic": "url_to_ava_pic",
+      "joinedAt": "2024-02-10T08:00:00Z"
+    },
+    {
+      "userId": "user_028",
+      "name": "Brayden Adams",
+      "email": "brayden@example.com",
+      "profilePic": "url_to_brayden_pic",
+      "joinedAt": "2024-02-11T08:00:00Z"
+    },
+    {
+      "userId": "user_029",
+      "name": "Cora Nelson",
+      "email": "cora@example.com",
+      "profilePic": "url_to_cora_pic",
+      "joinedAt": "2024-02-12T08:00:00Z"
+    },
+    {
+      "userId": "user_030",
+      "name": "Derek Carter",
+      "email": "derek@example.com",
+      "profilePic": "url_to_derek_pic",
+      "joinedAt": "2024-02-13T08:00:00Z"
+    }
+  ],
+  "teams": [
+    {
+      "teamId": "team_001",
+      "teamName": "Design Department",
+      "groups": ["group_001", "group_002"],
+      "createdAt": "2024-08-01T09:00:00Z",
+      "updatedAt": "2024-08-26T10:00:00Z"
+    },
+    {
+      "teamId": "team_002",
+      "teamName": "Marketing Division",
+      "groups": ["group_003", "group_004"],
+      "createdAt": "2024-08-02T10:00:00Z",
+      "updatedAt": "2024-08-27T11:00:00Z"
+    },
+    {
+      "teamId": "team_003",
+      "teamName": "Product Development",
+      "groups": ["group_005", "group_006"],
+      "createdAt": "2024-08-03T11:00:00Z",
+      "updatedAt": "2024-08-28T12:00:00Z"
+    },
+    {
+      "teamId": "team_004",
+      "teamName": "Sales and Support",
+      "groups": ["group_007", "group_008"],
+      "createdAt": "2024-08-04T12:00:00Z",
+      "updatedAt": "2024-08-29T13:00:00Z"
+    },
+    {
+      "teamId": "team_005",
+      "teamName": "HR and Admin",
+      "groups": ["group_009", "group_010"],
+      "createdAt": "2024-08-05T13:00:00Z",
+      "updatedAt": "2024-08-30T14:00:00Z"
+    },
+    {
+      "teamId": "team_006",
+      "teamName": "Finance and Strategy",
+      "groups": ["group_011", "group_012"],
+      "createdAt": "2024-08-06T14:00:00Z",
+      "updatedAt": "2024-08-31T15:00:00Z"
+    },
+    {
+      "teamId": "team_007",
+      "teamName": "Research and Development",
+      "groups": ["group_013", "group_014"],
+      "createdAt": "2024-08-07T15:00:00Z",
+      "updatedAt": "2024-09-01T16:00:00Z"
+    },
+    {
+      "teamId": "team_008",
+      "teamName": "Innovation and Growth",
+      "groups": ["group_015"],
+      "createdAt": "2024-08-08T16:00:00Z",
+      "updatedAt": "2024-09-02T17:00:00Z"
+    }
+  ],
+  "messages": [
+    {
+      "messageId": "msg_001",
+      "chatId": "chat_001",
+      "senderId": "user_001",
+      "content": "Hey, how's it going?",
+      "sentAt": "2024-08-01T09:15:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_002",
+      "chatId": "chat_001",
+      "senderId": "user_002",
+      "content": "Hi! I'm good, thanks!",
+      "sentAt": "2024-08-01T09:20:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_003",
+      "chatId": "chat_001",
+      "senderId": "user_001",
+      "content": "What are you up to today?",
+      "sentAt": "2024-08-01T09:30:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_004",
+      "chatId": "chat_001",
+      "senderId": "user_002",
+      "content": "Just working on some projects.",
+      "sentAt": "2024-08-01T09:45:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_005",
+      "chatId": "chat_001",
+      "senderId": "user_001",
+      "content": "Sounds good! Let's catch up later.",
+      "sentAt": "2024-08-01T10:00:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_006",
+      "chatId": "chat_001",
+      "senderId": "user_002",
+      "content": "Sure! Talk to you soon.",
+      "sentAt": "2024-08-01T10:15:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_007",
+      "chatId": "chat_001",
+      "senderId": "user_001",
+      "content": "Have a great day!",
+      "sentAt": "2024-08-01T10:30:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_008",
+      "chatId": "chat_001",
+      "senderId": "user_002",
+      "content": "Thanks, you too!",
+      "sentAt": "2024-08-01T10:45:00Z",
+      "type": "text"
+    },
+
+    {
+      "messageId": "msg_009",
+      "chatId": "chat_002",
+      "senderId": "user_003",
+      "content": "Have you completed the report?",
+      "sentAt": "2024-08-03T11:15:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_010",
+      "chatId": "chat_002",
+      "senderId": "user_004",
+      "content": "Almost done. Should be ready by noon.",
+      "sentAt": "2024-08-03T11:30:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_011",
+      "chatId": "chat_002",
+      "senderId": "user_003",
+      "content": "Great! Thanks for the update.",
+      "sentAt": "2024-08-03T11:45:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_012",
+      "chatId": "chat_002",
+      "senderId": "user_004",
+      "content": "I’ve added some final touches.",
+      "sentAt": "2024-08-03T12:00:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_013",
+      "chatId": "chat_002",
+      "senderId": "user_003",
+      "content": "Awesome! Looking forward to it.",
+      "sentAt": "2024-08-03T12:15:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_014",
+      "chatId": "chat_002",
+      "senderId": "user_004",
+      "content": "Let me know if you need anything else.",
+      "sentAt": "2024-08-03T12:30:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_015",
+      "chatId": "chat_002",
+      "senderId": "user_003",
+      "content": "Will do. Thanks!",
+      "sentAt": "2024-08-03T12:45:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_016",
+      "chatId": "chat_002",
+      "senderId": "user_004",
+      "content": "You’re welcome!",
+      "sentAt": "2024-08-03T13:00:00Z",
+      "type": "text"
+    },
+
+    {
+      "messageId": "msg_017",
+      "chatId": "chat_003",
+      "senderId": "user_001",
+      "content": "Welcome to the Design Team chat!",
+      "sentAt": "2024-08-02T10:05:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_018",
+      "chatId": "chat_003",
+      "senderId": "user_002",
+      "content": "Thanks! Looking forward to working with everyone.",
+      "sentAt": "2024-08-02T10:10:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_019",
+      "chatId": "chat_003",
+      "senderId": "user_003",
+      "content": "Let's discuss the new project.",
+      "sentAt": "2024-08-02T10:30:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_020",
+      "chatId": "chat_003",
+      "senderId": "user_001",
+      "content": "I agree. We need to set some goals.",
+      "sentAt": "2024-08-02T10:45:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_021",
+      "chatId": "chat_003",
+      "senderId": "group_001",
+      "content": "The project plan has been shared.",
+      "sentAt": "2024-08-02T11:00:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_022",
+      "chatId": "chat_003",
+      "senderId": "user_002",
+      "content": "I’ve reviewed the plan. Looks good!",
+      "sentAt": "2024-08-02T11:15:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_023",
+      "chatId": "chat_003",
+      "senderId": "user_003",
+      "content": "Same here. Let's get started.",
+      "sentAt": "2024-08-02T11:30:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_024",
+      "chatId": "chat_003",
+      "senderId": "user_001",
+      "content": "Great, I'll assign tasks.",
+      "sentAt": "2024-08-02T11:45:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_025",
+      "chatId": "chat_003",
+      "senderId": "user_002",
+      "content": "Looking forward to it!",
+      "sentAt": "2024-08-02T12:00:00Z",
+      "type": "text"
+    },
+
+    {
+      "messageId": "msg_026",
+      "chatId": "chat_004",
+      "senderId": "user_005",
+      "content": "Don't forget to submit your reports by end of day.",
+      "sentAt": "2024-08-04T12:05:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_027",
+      "chatId": "chat_004",
+      "senderId": "user_004",
+      "content": "Got it, I'll submit mine soon.",
+      "sentAt": "2024-08-04T12:20:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_028",
+      "chatId": "chat_004",
+      "senderId": "user_006",
+      "content": "I’m finalizing my part right now.",
+      "sentAt": "2024-08-04T12:30:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_029",
+      "chatId": "chat_004",
+      "senderId": "user_005",
+      "content": "Thanks for the reminders, everyone!",
+      "sentAt": "2024-08-04T12:45:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_030",
+      "chatId": "chat_004",
+      "senderId": "user_004",
+      "content": "Just sent mine!",
+      "sentAt": "2024-08-04T13:00:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_031",
+      "chatId": "chat_004",
+      "senderId": "user_006",
+      "content": "Done with my report too.",
+      "sentAt": "2024-08-04T13:15:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_032",
+      "chatId": "chat_004",
+      "senderId": "user_005",
+      "content": "Perfect, I’ll review them now.",
+      "sentAt": "2024-08-04T13:30:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_033",
+      "chatId": "chat_004",
+      "senderId": "user_006",
+      "content": "Thanks for the quick updates!",
+      "sentAt": "2024-08-04T13:45:00Z",
+      "type": "text"
+    },
+
+    {
+      "messageId": "msg_034",
+      "chatId": "chat_005",
+      "senderId": "user_001",
+      "content": "The project is on track. Let's review the milestones.",
+      "sentAt": "2024-08-10T09:30:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_035",
+      "chatId": "chat_005",
+      "senderId": "user_002",
+      "content": "I’ve updated the milestones document.",
+      "sentAt": "2024-08-10T09:45:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_036",
+      "chatId": "chat_005",
+      "senderId": "group_001",
+      "content": "All team members are on the same page.",
+      "sentAt": "2024-08-10T10:00:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_037",
+      "chatId": "chat_005",
+      "senderId": "user_001",
+      "content": "Let's set up a meeting to go over everything.",
+      "sentAt": "2024-08-10T10:15:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_038",
+      "chatId": "chat_005",
+      "senderId": "user_003",
+      "content": "Sounds good. I’m available in the afternoon.",
+      "sentAt": "2024-08-10T10:30:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_039",
+      "chatId": "chat_005",
+      "senderId": "user_004",
+      "content": "I can join too. Let’s coordinate.",
+      "sentAt": "2024-08-10T10:45:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_040",
+      "chatId": "chat_005",
+      "senderId": "user_002",
+      "content": "Meeting scheduled for 3 PM. See you all then!",
+      "sentAt": "2024-08-10T11:00:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_041",
+      "chatId": "chat_005",
+      "senderId": "user_003",
+      "content": "Got it. I’ll prepare my updates.",
+      "sentAt": "2024-08-10T11:15:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_042",
+      "chatId": "chat_005",
+      "senderId": "user_004",
+      "content": "Me too. Looking forward to the meeting.",
+      "sentAt": "2024-08-10T11:30:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_043",
+      "chatId": "chat_005",
+      "senderId": "user_002",
+      "content": "Same here. Let’s make it productive.",
+      "sentAt": "2024-08-10T11:45:00Z",
+      "type": "text"
+    },
+
+    {
+      "messageId": "msg_044",
+      "chatId": "chat_006",
+      "senderId": "user_003",
+      "content": "Project Beta is going well. We need to review progress.",
+      "sentAt": "2024-08-11T14:00:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_045",
+      "chatId": "chat_006",
+      "senderId": "user_004",
+      "content": "I’ve uploaded the latest drafts.",
+      "sentAt": "2024-08-11T14:15:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_046",
+      "chatId": "chat_006",
+      "senderId": "group_003",
+      "content": "The team has been notified about the updates.",
+      "sentAt": "2024-08-11T14:30:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_047",
+      "chatId": "chat_006",
+      "senderId": "user_003",
+      "content": "Great! Let’s finalize the next steps.",
+      "sentAt": "2024-08-11T14:45:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_048",
+      "chatId": "chat_006",
+      "senderId": "user_004",
+      "content": "I’m preparing a summary of the progress.",
+      "sentAt": "2024-08-11T15:00:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_049",
+      "chatId": "chat_006",
+      "senderId": "user_003",
+      "content": "Please share it once done.",
+      "sentAt": "2024-08-11T15:15:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_050",
+      "chatId": "chat_006",
+      "senderId": "user_004",
+      "content": "Will do. Thanks!",
+      "sentAt": "2024-08-11T15:30:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_051",
+      "chatId": "chat_006",
+      "senderId": "group_003",
+      "content": "Looking forward to the summary.",
+      "sentAt": "2024-08-11T15:45:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_052",
+      "chatId": "chat_001",
+      "senderId": "user_002",
+      "content": "What are your plans for the weekend?",
+      "sentAt": "2024-08-01T11:00:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_053",
+      "chatId": "chat_001",
+      "senderId": "user_001",
+      "content": "Thinking of going hiking. You?",
+      "sentAt": "2024-08-01T11:15:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_054",
+      "chatId": "chat_001",
+      "senderId": "user_002",
+      "content": "I might check out a new cafe in town.",
+      "sentAt": "2024-08-01T11:30:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_055",
+      "chatId": "chat_001",
+      "senderId": "user_001",
+      "content": "That sounds fun! Let me know how it is.",
+      "sentAt": "2024-08-01T11:45:00Z",
+      "type": "text"
+    },
+
+    {
+      "messageId": "msg_056",
+      "chatId": "chat_002",
+      "senderId": "user_003",
+      "content": "Did you get a chance to review the budget?",
+      "sentAt": "2024-08-05T10:00:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_057",
+      "chatId": "chat_002",
+      "senderId": "user_004",
+      "content": "Yes, I’ve sent the feedback.",
+      "sentAt": "2024-08-05T10:15:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_058",
+      "chatId": "chat_002",
+      "senderId": "user_003",
+      "content": "Great, thanks for that!",
+      "sentAt": "2024-08-05T10:30:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_059",
+      "chatId": "chat_002",
+      "senderId": "user_004",
+      "content": "No problem. Let me know if there are more changes.",
+      "sentAt": "2024-08-05T10:45:00Z",
+      "type": "text"
+    },
+
+    {
+      "messageId": "msg_060",
+      "chatId": "chat_003",
+      "senderId": "user_001",
+      "content": "I’ve created a new design draft.",
+      "sentAt": "2024-08-06T08:00:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_061",
+      "chatId": "chat_003",
+      "senderId": "user_002",
+      "content": "Awesome! I’ll take a look.",
+      "sentAt": "2024-08-06T08:15:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_062",
+      "chatId": "chat_003",
+      "senderId": "user_003",
+      "content": "I have some feedback on the draft.",
+      "sentAt": "2024-08-06T08:30:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_063",
+      "chatId": "chat_003",
+      "senderId": "user_001",
+      "content": "Sure, send it over.",
+      "sentAt": "2024-08-06T08:45:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_064",
+      "chatId": "chat_003",
+      "senderId": "user_002",
+      "content": "I’ll review the feedback too.",
+      "sentAt": "2024-08-06T09:00:00Z",
+      "type": "text"
+    },
+
+    {
+      "messageId": "msg_065",
+      "chatId": "chat_004",
+      "senderId": "user_005",
+      "content": "The new campaign looks promising.",
+      "sentAt": "2024-08-07T13:00:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_066",
+      "chatId": "chat_004",
+      "senderId": "user_006",
+      "content": "Yes, I agree. Let’s finalize the details.",
+      "sentAt": "2024-08-07T13:15:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_067",
+      "chatId": "chat_004",
+      "senderId": "user_005",
+      "content": "I’ll update the presentation slides.",
+      "sentAt": "2024-08-07T13:30:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_068",
+      "chatId": "chat_004",
+      "senderId": "user_006",
+      "content": "Great! I’ll review them once updated.",
+      "sentAt": "2024-08-07T13:45:00Z",
+      "type": "text"
+    },
+
+    {
+      "messageId": "msg_069",
+      "chatId": "chat_005",
+      "senderId": "user_002",
+      "content": "Meeting today went well.",
+      "sentAt": "2024-08-12T16:00:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_070",
+      "chatId": "chat_005",
+      "senderId": "user_001",
+      "content": "Yes, we made good progress.",
+      "sentAt": "2024-08-12T16:15:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_071",
+      "chatId": "chat_005",
+      "senderId": "user_003",
+      "content": "Let’s plan our next steps.",
+      "sentAt": "2024-08-12T16:30:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_072",
+      "chatId": "chat_005",
+      "senderId": "user_004",
+      "content": "I’ll prepare a summary of today’s meeting.",
+      "sentAt": "2024-08-12T16:45:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_073",
+      "chatId": "chat_005",
+      "senderId": "user_001",
+      "content": "Thanks, looking forward to it.",
+      "sentAt": "2024-08-12T17:00:00Z",
+      "type": "text"
+    },
+
+    {
+      "messageId": "msg_074",
+      "chatId": "chat_006",
+      "senderId": "user_005",
+      "content": "The design review is set for tomorrow.",
+      "sentAt": "2024-08-13T10:00:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_075",
+      "chatId": "chat_006",
+      "senderId": "user_006",
+      "content": "I’ve reviewed the final version.",
+      "sentAt": "2024-08-13T10:15:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_076",
+      "chatId": "chat_006",
+      "senderId": "user_005",
+      "content": "Great. I’ll incorporate the feedback.",
+      "sentAt": "2024-08-13T10:30:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_077",
+      "chatId": "chat_006",
+      "senderId": "user_006",
+      "content": "Thanks! Let’s finalize the project soon.",
+      "sentAt": "2024-08-13T10:45:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_078",
+      "chatId": "chat_006",
+      "senderId": "user_005",
+      "content": "Absolutely. I’ll send the updated files by end of day.",
+      "sentAt": "2024-08-13T11:00:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_079",
+      "chatId": "chat_006",
+      "senderId": "user_006",
+      "content": "Perfect. Looking forward to the final version.",
+      "sentAt": "2024-08-13T11:15:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_080",
+      "chatId": "chat_006",
+      "senderId": "user_005",
+      "content": "Thanks for the support!",
+      "sentAt": "2024-08-13T11:30:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_081",
+      "chatId": "chat_006",
+      "senderId": "user_006",
+      "content": "Anytime. Let's keep in touch.",
+      "sentAt": "2024-08-13T11:45:00Z",
+      "type": "text"
+    },
+
+    {
+      "messageId": "msg_082",
+      "chatId": "chat_003",
+      "senderId": "user_002",
+      "content": "How are we doing on the new design feature?",
+      "sentAt": "2024-08-14T09:00:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_083",
+      "chatId": "chat_003",
+      "senderId": "user_001",
+      "content": "We’re on track. I’ll share an update later.",
+      "sentAt": "2024-08-14T09:15:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_084",
+      "chatId": "chat_003",
+      "senderId": "user_003",
+      "content": "Sounds good. Keep us posted.",
+      "sentAt": "2024-08-14T09:30:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_085",
+      "chatId": "chat_003",
+      "senderId": "user_002",
+      "content": "Will do. Anything else we need to address?",
+      "sentAt": "2024-08-14T09:45:00Z",
+      "type": "text"
+    },
+
+    {
+      "messageId": "msg_086",
+      "chatId": "chat_004",
+      "senderId": "user_005",
+      "content": "We should review the campaign analytics next.",
+      "sentAt": "2024-08-15T14:00:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_087",
+      "chatId": "chat_004",
+      "senderId": "user_006",
+      "content": "I can prepare a report on the metrics.",
+      "sentAt": "2024-08-15T14:15:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_088",
+      "chatId": "chat_004",
+      "senderId": "user_005",
+      "content": "Perfect. Let’s set a time to discuss.",
+      "sentAt": "2024-08-15T14:30:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_089",
+      "chatId": "chat_004",
+      "senderId": "user_006",
+      "content": "How about tomorrow afternoon?",
+      "sentAt": "2024-08-15T14:45:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_090",
+      "chatId": "chat_004",
+      "senderId": "user_005",
+      "content": "Sounds good. I’ll send a calendar invite.",
+      "sentAt": "2024-08-15T15:00:00Z",
+      "type": "text"
+    },
+
+    {
+      "messageId": "msg_091",
+      "chatId": "chat_005",
+      "senderId": "user_003",
+      "content": "The project timeline is looking tight.",
+      "sentAt": "2024-08-16T12:00:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_092",
+      "chatId": "chat_005",
+      "senderId": "user_001",
+      "content": "I’ll see if we can adjust some deadlines.",
+      "sentAt": "2024-08-16T12:15:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_093",
+      "chatId": "chat_005",
+      "senderId": "user_002",
+      "content": "Thanks for that. Let’s aim to meet soon.",
+      "sentAt": "2024-08-16T12:30:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_094",
+      "chatId": "chat_005",
+      "senderId": "user_004",
+      "content": "I’ll adjust my tasks accordingly.",
+      "sentAt": "2024-08-16T12:45:00Z",
+      "type": "text"
+    },
+
+    {
+      "messageId": "msg_095",
+      "chatId": "chat_006",
+      "senderId": "user_006",
+      "content": "I’ve shared the updated designs.",
+      "sentAt": "2024-08-17T09:00:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_096",
+      "chatId": "chat_006",
+      "senderId": "user_005",
+      "content": "I’ll review them and provide feedback soon.",
+      "sentAt": "2024-08-17T09:15:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_097",
+      "chatId": "chat_006",
+      "senderId": "user_006",
+      "content": "Looking forward to your feedback.",
+      "sentAt": "2024-08-17T09:30:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_098",
+      "chatId": "chat_006",
+      "senderId": "user_005",
+      "content": "I’ll aim to get it to you by end of day.",
+      "sentAt": "2024-08-17T09:45:00Z",
+      "type": "text"
+    },
+    {
+      "messageId": "msg_099",
+      "chatId": "chat_006",
+      "senderId": "user_006",
+      "content": "Thanks! I’ll check in later.",
+      "sentAt": "2024-08-17T10:00:00Z",
+      "type": "text"
+    }
+  ]
+}
