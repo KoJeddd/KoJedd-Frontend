@@ -90,7 +90,7 @@ const CollabDetailsForm = () => {
             placeholder="Agreement"
           ></textarea>
         </div>
-        <div className="m-5 flex flex-col justify-end sm:flex-row">
+        <div className="m-5 flex flex-col sm:flex-row sm:justify-end">
           <button
             className="button-gradient w-full rounded-md border-2 border-[#FFD21D] px-5 py-2 font-bold text-[#0f0f0f] focus:outline-none sm:w-max"
             type="submit"
