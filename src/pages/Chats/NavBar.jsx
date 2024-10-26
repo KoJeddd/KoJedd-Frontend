@@ -2,9 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useChats } from "@/contexts/useChats";
 import logo from "../../assests/images/de_logo.png";
+import { useParams } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 const NavBar = () => {
-  const { onSelectChatsCategory, selectedChatsCategory, chatsCategories } =
+  let { onSelectChatsCategory, selectedChatsCategory, chatsCategories } =
     useChats();
 
   return (

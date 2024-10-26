@@ -21,7 +21,7 @@ import {
   SelectValue,
 } from "./ui/select";
 import { Textarea } from "./ui/textarea";
-import { capitalise } from "/lib/utils";
+import { capitalise } from "@/lib/utils";
 import { useState } from "react";
 
 export let FormFieldType;

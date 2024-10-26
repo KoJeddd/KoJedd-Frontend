@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <footer className="mt-auto flex justify-between px-8 py-8 text-sm">
+    <footer className="mt-auto flex justify-between bg-neutral-900 px-8 py-8 text-sm text-white">
       <span>2022 &copy;Decollaborator</span>
       <nav>
         <ul className="flex list-none justify-between gap-6">

@@ -8,7 +8,6 @@ const ChatsSelect = ({ children }) => {
       style={{ display: "grid", gridTemplateRows: "auto 1fr" }}
     >
       <ChatsSelectTopbar />
-
       {children}
     </div>
   );
